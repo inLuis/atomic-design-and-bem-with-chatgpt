@@ -1,0 +1,24 @@
+// Componente: header
+.header {
+  // Estilos del bloque (header)
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Sombra sutil
+  position: sticky; // Lo fija en la parte superior junto con el top
+  top: 0;
+  z-index: 999; // Asegura que esté por encima del contenido
+  display: flex;
+  align-items: center;
+  &__logo {
+    // Estilos del elemento (logo)
+    margin-left: 20px;
+    margin-right: auto;
+    height: 80%;
+  }
+  &__cta {
+    // Estilos del elemento (call-to-action)
+    margin-right: 20px;
+    margin-left: auto;
+    height: 80%;
+  }
+}

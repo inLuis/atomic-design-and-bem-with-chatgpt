@@ -1,0 +1,23 @@
+// Importación de estilos base
+@import 'base/reset';
+@import 'base/typography';
+
+// Importación de estilos de componentes "átomo"
+@import 'atoms/button';
+@import 'atoms/form';
+@import 'atoms/header';
+
+// Importación de estilos de componentes "molécula"
+@import 'molecules/hero';
+@import 'molecules/service-card';
+@import 'molecules/testimonials-slider';
+@import 'molecules/location';
+
+// Importación de estilos de componentes "organismo"
+@import 'organisms/faq';
+@import 'organisms/services';
+@import 'organisms/appointment-form';
+@import 'organisms/footer';
+
+// Importación de estilos de layout
+@import 'layout/layout';

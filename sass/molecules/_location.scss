@@ -1,0 +1,17 @@
+.location{
+  padding: 20px;
+  background-color: #f9f9f9;
+  .location-content{
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+      margin-bottom: 10px;
+    }
+    
+  }
+  .location-map{
+    img{
+      max-width: 300px;
+    }
+  }
+}

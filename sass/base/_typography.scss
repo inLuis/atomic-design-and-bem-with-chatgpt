@@ -1,0 +1,41 @@
+//Definiendo variables
+$font-family-base: "Titillium Web", sans-serif;
+$font-size-base: 16px;
+$heading-1-size: 28px;
+$heading-2-size: 22px;
+$heading-3-size: 18px;
+$main-color: #6c5ce7;
+$secondary-color: #4b3cb3;
+
+
+
+//Aplicando estilos generales
+body{
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size-base;
+  text-align: center;
+}
+h1{
+  font-size: $heading-1-size;
+}
+h2{
+  font-size: $heading-2-size;
+}
+h3{
+  font-size: $heading-3-size;
+}
+
+.hero{
+  color: #fff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,1);
+}
+
+.appointment{
+  color: #fff;
+}
+
+.footer{
+  color: #fff;
+}
