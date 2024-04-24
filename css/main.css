@@ -84,23 +84,19 @@ h3 {
   transform: scale(1.1);
 }
 
-.form {
-  display: inline-block;
-  width: 70%;
-}
-.form-group {
-  margin-bottom: 20px;
-}
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-.form-group input, .form-group textarea {
+.google-form {
   width: 100%;
-  padding: 10px;
-  font-size: 1em;
+  max-width: 640px;
+  height: 1250px;
+  margin: 0 auto;
+  display: block;
 }
 
+@media screen and (min-width: 700px) {
+  .google-form {
+    height: 1100px;
+  }
+}
 .header {
   height: 60px;
   background-color: #fff;
