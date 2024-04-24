@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
-    height: 90px;
+    margin: 20px auto;
+    height: 120px;
     .footer-social__link{
       color: #fff;
       text-decoration: none;
@@ -21,6 +21,7 @@
     .footer-social{
       flex-direction: row;
       justify-content: space-around;
+      height: 70px;
     }
   }
 }

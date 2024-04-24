@@ -50,6 +50,7 @@ h3 {
   border: none;
   border-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 .header-button:hover, .content-button:hover {
   background-color: #4b3cb3;
@@ -57,6 +58,30 @@ h3 {
 
 .content-button {
   height: 50px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.whatsapp-button i {
+  font-size: 35px;
+  color: #fff;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
 }
 
 .form {
@@ -96,7 +121,17 @@ h3 {
   margin-left: auto;
   height: 80%;
 }
+.header__cta--desktop {
+  display: none;
+}
 
+@media screen and (min-width: 700px) {
+  .header__cta--desktop {
+    display: block;
+    height: 80%;
+    padding-right: 20px;
+  }
+}
 .hero {
   background-image: url("../img/background-hero3.png");
   background-size: cover;
@@ -158,6 +193,9 @@ h3 {
   .service-card {
     width: 33%;
   }
+}
+.testimonials {
+  padding: 20px 0;
 }
 .testimonials .testimonials-slider {
   display: flex;
@@ -242,7 +280,7 @@ h3 {
 }
 .services {
   background-color: #f9f9f9;
-  padding: 0px 20px 20px;
+  padding: 20px 20px;
 }
 .services h2 {
   margin-bottom: 25px;
@@ -267,6 +305,9 @@ h3 {
 .appointment .appointment-content {
   margin-bottom: 30px;
 }
+.appointment .appointment-content a {
+  color: white;
+}
 
 .footer {
   padding: 20px;
@@ -276,8 +317,8 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
-  height: 90px;
+  margin: 20px auto;
+  height: 120px;
 }
 .footer .footer-social .footer-social__link {
   color: #fff;
@@ -291,5 +332,6 @@ h3 {
   .footer .footer-social {
     flex-direction: row;
     justify-content: space-around;
+    height: 70px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,7 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
   &:hover{
     background-color: $secondary-color;
   }
@@ -14,4 +15,28 @@
 .content-button{
   @extend .header-button;
   height: 50px;
+}
+
+.whatsapp-button{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  i{
+    font-size: 35px;
+    color: #fff;
+  }
+  &:hover{
+    transform: scale(1.1);
+  }
 }

@@ -20,5 +20,16 @@
     margin-right: 20px;
     margin-left: auto;
     height: 80%;
+    &--desktop{
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 700px){
+  .header__cta--desktop{
+    display: block;
+    height: 80%;
+    padding-right: 20px;
   }
 }

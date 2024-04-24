@@ -18,7 +18,11 @@
           <img src="./img/logo-fisioterapiaentoluca-40.png" alt="Logo del consultorio">
         </div>
         <div class="header__cta">
-          <button class="header-button">Programar cita</button>
+          <button class="header-button appointment-button" role="link">Programar cita</button>
+        </div>
+        <div class="header__cta--desktop">
+          <button class="header-button desktop-button" role="link" data-url="https://www.doctoralia.com.mx/z/YD1jDX">Doctoralia</button>
+          <button class="header-button desktop-button" role="link" data-url="https://m.me/inLuis1917/">Messenger</button>
         </div>
     </header>
 
@@ -38,7 +42,7 @@
                 <li>Resultados comprobados</li>
               </ul>
               <div class="hero__cta">
-                <button class="content-button">PROGRAMAR CITA</button>
+                <button class="content-button appointment-button" role="link">PROGRAMAR CITA</button>
               </div>
             </div>
         </section>
@@ -112,7 +116,7 @@
                 <span>
                   <i class="fa-solid fa-car-burst"></i>
                 </span>
-                <h3>Recuperación port-traumática</h3>
+                <h3>Recuperación post-traumática</h3>
                 <p>Fracturas, luxaciones, accidentes automovilísticos, entre otras.</p>
               </div>
               <div class="service-card">
@@ -165,7 +169,7 @@
         <section class="appointment" id="appointment-form">
             <!-- Contenido del formulario de cita -->
             <h2 class="appointment-heading">Agenda una cita</h2>
-            <p class="appointment-content">Mejora tu vida y agenda una cita llamando al <a href="tel:722 571 4265"><strong>722 571 4265</strong></a>, o si lo prefieres, deja tus datos en el siguiente formulario y nos comunicaremos contigo enseguida.</p>
+            <p class="appointment-content">Mejora tu vida y agenda una cita llamando al <a href="tel:722 571 4265"><strong>722 571 4265</strong></a>, en la plataforma de <a href="https://www.doctoralia.com.mx/z/YD1jDX" target="_blank">Doctoralia</a>, o si lo prefieres, deja tus datos en el siguiente formulario y nos comunicaremos contigo enseguida.</p>
             <form class="form">
               <div class="form-group">
                 <label for="name" class="label">Nombre</label>
@@ -180,16 +184,15 @@
                 <input type="email" id="email" name="email" class="input" required>
               </div>
               <div class="form-group">
-                <label for="date" class="label">Fecha de la cita</label>
+                <label for="date" class="label">Fecha de la cita (sujeto a disponibilidad)</label>
                 <input type="date" id="date" name="date" class="input">
               </div>
               <div class="form-group">
                 <label for="message" class="label">Mensaje</label>
                 <textarea id="message" name="message" class="textarea"></textarea>
               </div>
-              <button class="content-button">Enviar</button>
+              <button id="sendButton" class="content-button" type="button">Enviar</button>
             </form>
-
         </section>
         
         <section class="location">
@@ -202,17 +205,21 @@
           </div>
         </section>
     </main>
-
+    
     <footer class="footer">
         <!-- Contenido del pie de página -->
         <div class="footer-social">
-          <a href="https://www.facebook.com/profile.php?id=100063569474544" class="footer-social__link">Facebook</a>
-          <a href="mailto:contacto@fisioterapiaentoluca.com" class="footer-social__link">contacto@fisioterapiaentoluca.com</a>
-          <a href="tel:7225714265" class="footer-social__link">722 571 4265</a>
+          <a href="https://www.facebook.com/profile.php?id=100063569474544" class="footer-social__link" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="https://www.doctoralia.com.mx/z/YD1jDX" class="footer-social__link" target="_blank"><i class="fa-solid fa-user-doctor"></i> Doctoralia</a>
+          <a href="mailto:contacto@fisioterapiaentoluca.com" class="footer-social__link"><i class="fa-regular fa-envelope"></i> contacto@fisioterapiaentoluca.com</a>
+          <a href="tel:7225714265" class="footer-social__link"><i class="fa-solid fa-phone"></i> 722 571 4265</a>
         </div>
         <div class="footer-copyright">
           © Copyright 2018 - 2024   |   Todos los derechos reservados
         </div>
     </footer>
+    <a href="https://wa.me/527225714265" class="whatsapp-button" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>
